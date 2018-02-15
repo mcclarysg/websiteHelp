@@ -40,8 +40,8 @@
     border-radius: 6px;
 }
 
-.devices .grid__item {
-    cursor: normal;
+.grid--product.devices .grid__item {
+    cursor: default;
 }
 
 /*****************
