@@ -65,6 +65,35 @@
     </div>
 </section>
 
+<div class="grid grid--product devices">
+    <h3 class="grid__title">Devices</h3>
+    <p class="grid__desc">Get elementary OS out of the box on a new comptuer. Devices are sold and supported by their manufacturers.</p>
+    <div class="grid__item">
+        <img src="https://slimbook.es/images/stories/virtuemart/product/resized/katana2_300x300.png"/>
+        <h4>Slimbook Katana II 13&Prime;</h4>
+        <p data-l10n-off="1" class="text-center">$999+</p>
+        <a href="https://slimbook.es/en/store/slimbook-katana" target="_blank" class="button">Buy from Slimbook</a>
+    </div>
+    <div class="grid__item">
+        <img src="https://slimbook.es/images/stories/virtuemart/product/excalibur_abierto_500.jpg"/>
+        <h4>Slimbook Excalibur 2 15&Prime;</h4>
+        <p data-l10n-off="1" class="text-center">$999+</p>
+        <a href="https://slimbook.es/pedidos/slimbook-excalibur" target="_blank" class="button">Buy from Slimbook</a>
+    </div>
+    <div class="grid__item">
+        <img src="https://system76.com/assets/products/galp2/thumb.png"/>
+        <h4>System76 Galago Pro 13&Prime;</h4>
+        <p data-l10n-off="1" class="text-center">$999+</p>
+        <a href="https://system76.com/desktops/meerkat" target="_blank" class="button">Buy from System76</a>
+    </div>
+    <div class="grid__item">
+        <img src="https://system76.com/assets/products/meer3/thumb.png"/>
+        <h4>System76 Meerkat</h4>
+        <p data-l10n-off="1" class="text-center">$599+</p>
+        <a href="https://system76.com/desktops/meerkat" target="_blank" class="button">Buy from System76</a>
+    </div>
+</div>
+
 <?php foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">

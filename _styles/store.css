@@ -25,6 +25,11 @@
     text-transform: capitalize;
 }
 
+.grid--product .grid__desc {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
 .grid--product .grid__item {
     cursor: pointer;
     margin: 20px;
@@ -33,6 +38,10 @@
 
 .grid__item img {
     border-radius: 6px;
+}
+
+.devices .grid__item {
+    cursor: normal;
 }
 
 /*****************
