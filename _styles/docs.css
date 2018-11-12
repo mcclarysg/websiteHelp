@@ -40,8 +40,9 @@ h4 a.heading-link:hover::before,
 h5 a.heading-link:hover::before,
 h6 a.heading-link:hover::before {
     content: "\f0c1";
-    font-family: FontAwesome;
+    font-family: "Font Awesome\ 5 Pro";
     font-size: 0.75em;
+    font-weight: inherit;
     left: -1.25em;
     position: absolute;
     top: 0.5em;
@@ -74,6 +75,10 @@ h3 {
     padding-bottom: 0.3em;
 }
 
+.alert h3 {
+    border-bottom: none;
+}
+
 h4 {
     font-weight: 400;
 }
@@ -100,6 +105,10 @@ ul {
 
 .docs img {
     margin: 1.5em auto;
+}
+
+img.inline {
+    margin: 0;
 }
 
 img.float-left {

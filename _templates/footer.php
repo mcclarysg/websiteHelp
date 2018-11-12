@@ -3,10 +3,10 @@
         <footer>
             <div>
                 <p>
-                    Copyright &copy; <?php echo date('Y'); ?> elementary LLC.
+                    Copyright &copy; <?php echo date('Y'); ?> <?php echo $sitewide['author']; ?>
                 </p>
                 <div class="popover">
-                    <a href="#"><i class="fa fa-language"></i> Language</a>
+                    <a href="#"><i class="far fa-language"></i> Language</a>
                     <div class="popover-content">
                         <strong>Change Site Language</strong>
                         <ul>
@@ -30,8 +30,9 @@
                 </div>
             </div>
             <ul>
+                <li><a href="<?php echo $sitewide['root'].'press'; ?>">Press</a></li>
                 <li><a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a></li>
-                <li><a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a></li>
+                <li><a href="<?php echo $sitewide['root'].'privacy'; ?>">Privacy</a></li>
                 <li><a href="<?php echo $sitewide['root'].'team'; ?>">Team</a></li>
                 <li><a href="<?php echo $sitewide['root'].'open-source'; ?>">Open Source</a></li>
             </ul>

@@ -6,15 +6,18 @@ If you haven't already, you will need to <a href="/" target="_blank" rel="noopen
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
-* Intel i3 or comparable dual-core 64-bit processor
-* 1 GB of system memory (RAM)
-* 15 GB of disk space
+While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
+
+* Recent Intel i3 or comparable dual-core 64-bit processor
+* 4 GB of system memory (RAM)
+* Solid state drive (SSD) with 15 GB of free space
 * Internet access
+* 1024×768 display
 
 <div class="row alert warning" markdown="1">
 <div class="column alert">
 <div class="icon">
-<i class="warning fa fa-warning"></i>
+<i class="warning fas fa-4x fa-exclamation-triangle"></i>
 </div>
 <div class="icon-text" markdown="1">
 
@@ -32,9 +35,9 @@ Select the operating system you are currently using to view tailored installatio
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
-<a class="button install-on-windows" href="#install-on-windows"><i class="fa fa-windows"></i> Windows</a>
-<a class="button install-on-macos" href="#install-on-macos"><i class="fa fa-apple"></i> macOS</a>
-<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fa fa-linux"></i> Ubuntu</a>
+<a class="button install-on-windows" href="#install-on-windows"><i class="fab fa-windows"></i> Windows</a>
+<a class="button install-on-macos" href="#install-on-macos"><i class="fab fa-apple"></i> macOS</a>
+<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fab fa-linux"></i> Ubuntu</a>
 </div>
 </div>
 
@@ -54,14 +57,14 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 
 1. Open Rufus
 2. Insert your USB drive and select it in the "Device" list
-3. Select "ISO Image" next to "Create a bootable disk using..."
-4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
-5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the `#` button in the status bar and verify that the text next to "SHA256" matches the following hash:
+3. Select "Disk or ISO image" in the "Boot selection" list
+4. Click "SELECT" to choose the ISO that you downloaded previously.
+5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click  ![the checksum icon](images/docs/installation/rufus_checksum_icon.png) {.inline}  next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
 ```bash nohighlight
-5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
+a8c7b8c54aeb0889bb3245356ffcd95b77e9835ffb5ac56376a3b627c3e1950f
 ```
 
-6. If the hashes match, click "Start" and wait for the process to finish.
+6. If the hashes match, click "START" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -85,41 +88,37 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.4.1-stable.20180214.iso
+shasum -a 256 ~/Downloads/elementaryos-5.0-stable.20181016.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
+a8c7b8c54aeb0889bb3245356ffcd95b77e9835ffb5ac56376a3b627c3e1950f
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20180214.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-5.0-stable.20181016.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
 
-<a href="http://www.etcher.io/" class="button suggested-action">Download Etcher</a>
+<a href="https://www.etcher.io/" class="button suggested-action">Download Etcher</a>
+
+
+![etcher steps](images/docs/installation/etcher.gif)
+
 
 1. Insert the spare USB drive, and select the ISO file you've just downloaded.
 2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-
-    ![Select image in Etcher](images/docs/installation/etcher_osx_select.png)
-
 3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
 4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-
-    ![Flash image in Etcher](images/docs/installation/etcher_osx_flash.png)
-
 5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
-
-    ![Flash image in Etcher](images/docs/installation/etcher_osx_complete.png)
 
 The following dialog may appear during the flashing process, it is safe to ignore.
 
@@ -151,20 +150,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.4.1-stable.20180214.iso
+sha256sum elementaryos-5.0-stable.20181016.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
+a8c7b8c54aeb0889bb3245356ffcd95b77e9835ffb5ac56376a3b627c3e1950f
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.
 
-<a href="http://www.appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
+<a href="https://unetbootin.github.io/" class="button suggested-action">Download UNetbootin</a>
 
 
 1. Open UNetbootin from the Dash. It will open a window like the one below:

@@ -41,14 +41,40 @@ Promise.all([jQuery, modal]).then(([$]) => {
             var $trigger = $item.find('.open-modal')
 
             $trigger.leanModal({
-                top: '5vh',
                 overlayOpacity: 0.5,
                 closeButton: '.close-modal'
             })
             $trigger.click()
 
             ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
+
+            updateShippingEstimate($item.attr('data-printful-id'))
         })
+
+        /**
+         * updateShippingEstimate
+         * Fetches a psudeo shipping estimate
+         *
+         * @param {String} printfulId - the variant printful_id
+         *
+         * @return {Void}
+         */
+        var updateShippingEstimate = function (printfulId) {
+            var $m = $('.js-leanmodal-active .modal__shipping')
+            // GET /api/gelocate
+            // with the parameters "shipping" and "item" (printful variant id)
+            $.getJSON(baseUrl + 'api/geolocate?shipping&item=' + printfulId, function (data) {
+                // Update price information
+                try {
+                    const cost = data['shipping']['estimates'][0]['cost']
+                    if (cost != null) {
+                        $m.text('+ $' + cost + ' estimated shipping')
+                    }
+                } catch (e) {
+                    console.log(e)
+                }
+            })
+        }
 
         /**
          * updateVariant
@@ -167,6 +193,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 if (color != null && variant['color'] !== color) continue
 
                 updateVariant($f, p, variant)
+                updateShippingEstimate(variant['printful_id'])
 
                 $('.alert--error', $f).text('')
                 $('input[type="submit"]', $f).prop('disabled', false)
