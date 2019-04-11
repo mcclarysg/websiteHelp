@@ -73,14 +73,14 @@
 </div>
 <div class="grid grid--product devices">
     <div class="grid__item">
-        <img src="/images/store/devices/dell-xps-13.png"/>
+        <img src="../images/store/devices/dell-xps-13.png"/>
         <h4>Dell XPS 13</h4>
         <p>Incredibly thin and light. 13&Prime; HiDPI display. Aluminum and carbon fiber.</p>
         <p data-l10n-off="1" class="text-center">$949+</p>
         <a href="https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/xps-13-laptop/spd/xps-13-9380-laptop" target="_blank" class="button suggested-action">Buy from Dell</a>
     </div>
     <div class="grid__item">
-        <img src="/images/store/devices/dell-precision-5530.png"/>
+        <img src="../images/store/devices/dell-precision-5530.png"/>
         <h4>Dell Precision 5530</h4>
         <p>Sleek professional workstation. 15&Prime; HiDPI display. Aluminum and carbon fiber.</p>
         <p data-l10n-off="1" class="text-center">$1,169+</p>
