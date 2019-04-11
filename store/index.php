@@ -67,7 +67,11 @@
 
 <div class="grid grid--product devices">
     <h3 class="grid__title">Devices</h3>
-    <p class="grid__desc">Get elementary OS out of the box on a new comptuer. Devices are sold and supported by their manufacturers.</p>
+    <div class="two-thirds">
+        <p class="grid__desc">Get elementary OS out of the box on a new comptuer. Hardware sold and supported by the manufacturer. Software support provided by elementary.</p>
+    </div>
+</div>
+<div class="grid grid--product devices">
     <div class="grid__item">
         <img src="/images/store/devices/dell-xps-13.png"/>
         <h4>Dell XPS 13</h4>
