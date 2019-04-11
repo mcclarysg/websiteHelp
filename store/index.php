@@ -68,7 +68,7 @@
 <div class="grid grid--product devices">
     <h3 class="grid__title">Devices</h3>
     <div class="two-thirds">
-        <p class="grid__desc">Get elementary OS out of the box on a new comptuer. Hardware sold and supported by the manufacturer. Software support provided by elementary.</p>
+        <p class="grid__desc">Get elementary OS out of the box on a new computer. Hardware sold and supported by the manufacturer. Software support provided by elementary.</p>
     </div>
 </div>
 <div class="grid grid--product devices">
