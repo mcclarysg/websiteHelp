@@ -110,13 +110,13 @@ elementary OS comes bundled with **AppCenter**, an app store for free apps. Inst
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki._
+_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 18.04 LTS should work on elementary OS Juno._
 
 ## Updating {#updating}
 
 elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
 
-For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/xenial/">Ubuntu security notices</a>.
+For more information related to security patches, read the <a href="https://usn.ubuntu.com/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 
