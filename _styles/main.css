@@ -496,6 +496,8 @@ footer ul li a:focus {
 }
 
 .row {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
     padding: 48px 24px;
@@ -517,8 +519,7 @@ footer ul li a:focus {
 
 .grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem 0;
@@ -539,7 +540,6 @@ footer ul li a:focus {
 
 @media only screen and (min-width: 640px) {
     .grid .half {
-        display: inline-block;
         vertical-align: top;
         width: calc(50% - 3rem);
     }
@@ -736,6 +736,7 @@ a.third:hover {
 button,
 select,
 .button {
+    align-self: center;
     appearance: none;
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
@@ -748,6 +749,7 @@ select,
         0 1px 0 0 rgba(255, 255, 255, 0.15);
     color: #333;
     cursor: pointer;
+    flex-grow: 0;
     font-family: inherit;
     font-size: 1rem;
     margin: 1.5rem;

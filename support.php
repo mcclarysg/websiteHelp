@@ -78,7 +78,6 @@ include $template['alert'];
 
 <div class="row">
     <h2>Guides</h2>
-
     <a class="column third" href="/docs/installation">
         <i class="fa fa-download"></i>
         <h3>Installation</h3>

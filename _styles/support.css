@@ -32,11 +32,11 @@ a.column h3 {
     align-content: center;
     align-items: center;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 0;
     padding-top: 12px;
-    text-align: center;
 }
 
 .row.apps .app {

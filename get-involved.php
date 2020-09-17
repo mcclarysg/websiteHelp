@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="grid">
-        <div class="whole" id="sections-menu">
+        <div id="sections-menu">
             <a class="button flat suggested-action" href="#funding">Funding</a>
             <a class="button flat suggested-action" href="#translations">Translations</a>
             <a class="button flat suggested-action" href="#support">Support</a>
@@ -41,19 +41,9 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Funding</h2>
-            <p class="text-center">With the help of our users and fans, we've been able to grow from a small group of passionate volunteers into a tiny but sustainable company. Every little bit of support helps us improve elementary OS and tackle even more ambitious problems.</p>
+            <p>With the help of our users and fans, we've been able to grow from a small group of passionate volunteers into a tiny but sustainable company. Every little bit of support helps us improve elementary OS and tackle even more ambitious problems.</p>
         </div>
     </div>
-
-<?php if (event_active('indiegogo appcenter 2/7')) { ?>
-     <div class="grid">
-         <div class="two-thirds">
-             <h2>Indiegogo</h2>
-             <p class="text-center">We’re currently crowdfunding AppCenter for everyone on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
-             <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
-         </div>
-     </div>
- <?php } ?>
 
     <div class="grid">
         <div class="half">
@@ -93,10 +83,8 @@
 </section>
 
 <section id="translations">
+    <h2>Translations</h2>
     <div class="grid">
-        <div class="whole">
-            <h2>Translations</h2>
-        </div>
         <div class="half">
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
             <p>Both elementary OS and our website are openly translated using an online platform called Weblate. <a href="/docs/translation-guide" class="read-more">Learn More</a></p>
@@ -113,11 +101,8 @@
 </section>
 
 <section id="support" class="grey">
+    <h2 class="text-center">Support</h2>
     <div class="grid">
-        <div class="two-thirds">
-            <h2>Support</h2>
-            <p></p>
-        </div>
         <div class="half">
             <h3>Question &amp; Answer</h3>
             <p>Stack Exchange is a Q&amp;A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
@@ -179,7 +164,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
+            <p>Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
         </div>
     </div>
     <div class="design-links">
