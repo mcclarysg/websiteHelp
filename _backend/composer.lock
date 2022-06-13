@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5b8043f988e5d1f725323e7dd0b668f",
+    "content-hash": "8f701b6e44dba0dbaa205fc4cc50b0d8",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -140,6 +140,7 @@
                 "api",
                 "email"
             ],
+            "abandoned": "mailchimp/transactional",
             "time": "2015-09-22T13:58:03+00:00"
         },
         {
@@ -208,16 +209,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.66.0",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "0dc50f42b06be83fe7029410616bda6e89c6d2be"
+                "reference": "d8ce03ae74d012d108f2338214444f24d94c2496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/0dc50f42b06be83fe7029410616bda6e89c6d2be",
-                "reference": "0dc50f42b06be83fe7029410616bda6e89c6d2be",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/d8ce03ae74d012d108f2338214444f24d94c2496",
+                "reference": "d8ce03ae74d012d108f2338214444f24d94c2496",
                 "shasum": ""
             },
             "require": {
@@ -227,11 +228,10 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.16.5",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.3",
-                "symfony/process": "~3.4"
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -261,7 +261,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-11-24T16:33:56+00:00"
+            "time": "2022-06-08T16:13:12+00:00"
         }
     ],
     "packages-dev": [
